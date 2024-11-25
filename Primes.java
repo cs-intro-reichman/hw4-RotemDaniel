@@ -1,12 +1,12 @@
 public class Primes {
     public static void main(String[] args) {
         int n = Integer.parseInt(args[0]);
-        boolean[] primes = new boolean[n];
+        boolean[] primes = new boolean[n+1];
         for (int i = 2; i < primes.length; i++) {
             primes[i] = true;
         }
         int j = 2;
-        while (j < Math.sqrt(n)) {
+        while (j < n) {
             for (int i = j+1; i < primes.length; i++) {
                 if (i % j == 0)
                 {
