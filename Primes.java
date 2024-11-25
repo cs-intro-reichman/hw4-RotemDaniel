@@ -14,7 +14,7 @@ public class Primes {
                 }
             }
             for (int i = j+1; i < primes.length; i++) {
-                if (primes[i] == true) { 
+                if (primes[i] == true || i == n) { 
                     j = i;
                     break;
                 }
